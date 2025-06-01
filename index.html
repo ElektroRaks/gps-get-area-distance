@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body onload="main()">
+    <div class="card">
+        <div class="container">
+            <h2 class="title text-center">GPS App</h2>
+            <div id="location"></div>
+            <button class="btn" onclick="setLocationA()">A : Get Location</button>
+            <div id="locationAinfo"></div>
+            <button class="btn" onclick="setLocationB()">B : Get Location</button>
+            <div id="locationBinfo"></div>
+            <hr class="hr">
+            <div id="info"></div>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+        <div id="map" class="col-12"></div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

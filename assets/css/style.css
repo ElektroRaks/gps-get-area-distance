@@ -1,0 +1,77 @@
+.card {
+    margin: 30px auto;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.hr {
+    margin: 20px 0;
+}
+
+.info {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
