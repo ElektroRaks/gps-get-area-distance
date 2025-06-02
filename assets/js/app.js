@@ -10,7 +10,7 @@ function main() {
     if (geolocation) {
         geolocation.watchPosition(onLocationUpdate, onError, {
             enableHighAccuracy: true,
-            // timeout: 5000,
+            timeout: 10000,
             maximumAge: 1000
         })
     } else {
@@ -26,7 +26,6 @@ function onLocationUpdate(event) {
     if (location) {
         location.innerHTML = `Latitude: ${currentLocation.latitude}<br>Longitude: ${currentLocation.longitude}`;
     }
-
     updateMap();
 }
 
@@ -157,6 +156,8 @@ function viewMapAandBwithLineandPoint() {
         .bindPopup("Location B")
         .openPopup();
 }
+
+main();
 
 // old map
 // function updateMap() {
