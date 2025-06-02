@@ -10,7 +10,7 @@ function main() {
     if (geolocation) {
         geolocation.watchPosition(onLocationUpdate, onError, {
             enableHighAccuracy: true,
-            timeout: 10000,
+            timeout: 100000,
             maximumAge: 10000
         })
     } else {
