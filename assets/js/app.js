@@ -13,7 +13,6 @@ function main() {
             // timeout: 10000,
             maximumAge: 5000
         })
-        updateMap();
     } else {
         alert("Geolocation is not supported by your browser");
         return;
@@ -27,6 +26,7 @@ function onLocationUpdate(event) {
     if (location) {
         location.innerHTML = `Latitude: ${currentLocation.latitude}<br>Longitude: ${currentLocation.longitude}`;
     }
+    updateMap();
 }
 
 function onError(error) {
