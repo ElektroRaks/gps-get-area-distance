@@ -10,13 +10,14 @@ function main() {
     if (geolocation) {
         geolocation.watchPosition(onLocationUpdate, onError, {
             enableHighAccuracy: true,
-            timeout: 10000,
-            maximumAge: 1000
+            // timeout: 10000,
+            maximumAge: 5000
         })
     } else {
         alert("Geolocation is not supported by your browser");
         return;
     }
+    updateMap();
 }
 
 function onLocationUpdate(event) {
@@ -26,7 +27,6 @@ function onLocationUpdate(event) {
     if (location) {
         location.innerHTML = `Latitude: ${currentLocation.latitude}<br>Longitude: ${currentLocation.longitude}`;
     }
-    updateMap();
 }
 
 function onError(error) {
