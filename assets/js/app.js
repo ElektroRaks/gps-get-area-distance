@@ -25,8 +25,8 @@ function onLocationUpdate(event) {
     let location = document.getElementById("location");
     if (location) {
         location.innerHTML = `Latitude: ${currentLocation.latitude}<br>Longitude: ${currentLocation.longitude}`;
+        updateMap();
     }
-    updateMap();
 }
 
 function onError(error) {
