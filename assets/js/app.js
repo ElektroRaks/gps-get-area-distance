@@ -11,7 +11,7 @@ function main() {
         geolocation.watchPosition(onLocationUpdate, onError, {
             enableHighAccuracy: true,
             // timeout: 10000,
-            maximumAge: 5000
+            maximumAge: 10000
         })
     } else {
         alert("Geolocation is not supported by your browser");
