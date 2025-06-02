@@ -13,11 +13,11 @@ function main() {
             // timeout: 10000,
             maximumAge: 5000
         })
+        updateMap();
     } else {
         alert("Geolocation is not supported by your browser");
         return;
     }
-    updateMap();
 }
 
 function onLocationUpdate(event) {
@@ -147,7 +147,6 @@ function viewMapAandBwithLineandPoint() {
     if (!locationA || !locationB) {
         return;
     }
-    updateMap();
     L.polyline([[locationA.latitude, locationA.longitude], [locationB.latitude, locationB.longitude]], {color: 'red'}).addTo(leafletMap);
     L.marker([locationA.latitude, locationA.longitude]).addTo(leafletMap)
         .bindPopup("Location A")
